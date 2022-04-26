@@ -3,8 +3,12 @@
     padding: 0;
 }
 body{
+    position: fixed;
+    width:100vw;
+    height:100vh;
     background-color: #1f2025;
 }
+
 #gridContainer{
     height: 800px;
     overflow-y: scroll;
@@ -13,7 +17,7 @@ body{
 #grid{
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 10%;
     --grid-item--max-width: calc((100% - 20px) / 3);
     display: grid;grid-template-columns: repeat(auto-fill, minmax(max(300px, var(--grid-item--max-width)), 1fr));
     grid-gap: 10px;
@@ -104,4 +108,8 @@ button{
 }
 button:hover{
     cursor: pointer;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }

@@ -100,7 +100,7 @@
             ifr.setAttribute('src',urlList[i]+'&dh=0');
             ifr.setAttribute('allowFullScreen', '');
             var content = modal.querySelector('#content');
-            content.append(ifr);
+            content.prepend(ifr);
         }
         // function curtain() {
         //     var imgList = document.querySelectorAll('imgame');
