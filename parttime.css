@@ -8,11 +8,13 @@ body{
     height:100vh;
     background-color: #1f2025;
 }
-
-#gridContainer{
-    height: 900px;
-    overflow-y: scroll;
+section{
     margin: 5%;
+    overflow-y: hidden;
+}
+#gridContainer{
+    height: 950px;
+    overflow-y: scroll;
 }
 
 #grid{
