@@ -10,14 +10,15 @@ body{
 }
 
 #gridContainer{
-    height: 800px;
+    height: 900px;
     overflow-y: scroll;
+    margin: 5%;
 }
 
 #grid{
     list-style-type: none;
     margin: 0;
-    padding: 10%;
+    padding: 0;
     --grid-item--max-width: calc((100% - 20px) / 3);
     display: grid;grid-template-columns: repeat(auto-fill, minmax(max(300px, var(--grid-item--max-width)), 1fr));
     grid-gap: 10px;

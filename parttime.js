@@ -102,6 +102,7 @@
             var content = modal.querySelector('#content');
             content.prepend(ifr);
         }
+
         // function curtain() {
         //     var imgList = document.querySelectorAll('imgame');
         //     var liList = document.querySelectorAll('li');
@@ -109,6 +110,7 @@
         //     for (let i = 0; i < liList.length; i++) {
         //         var liRec = liList[i].getBoundingClientRect();
         //         if (liRec.top > gridConRec.bottom || liRec.bottom < gridConRec.top) {
+                
         //         }
         //          else {
         //             // imgList[i].style.display = '';
