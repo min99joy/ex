@@ -112,7 +112,21 @@ button{
 button:hover{
     cursor: pointer;
 }
-::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+html::-webkit-scrollbar{
+    width:0;
+    background-color: transparent;
 }
+#gridContainer::-webkit-scrollbar {
+    width: 6px;
+  }
+#gridContainer::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+#gridContainer::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+  }
+#gridContainer::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+  }
