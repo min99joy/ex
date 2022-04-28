@@ -42,7 +42,11 @@ li{
         height :250px;
     }
 }
-
+@media(max-width:400px){
+    li{
+        height :200px;
+    }
+}
 img{
     max-width:80%; max-height:80%;
     transition: all 1s ease;
