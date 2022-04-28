@@ -70,7 +70,6 @@
         }
         function hideModal(id) {
             var container = document.getElementById(id);
-            var ifrList = document.querySelectorAll('iframe')
             container.style.opacity = 0;
             container.style.pointerEvents = 'none';
             content.removeChild(content.firstChild);
@@ -102,22 +101,6 @@
             var content = modal.querySelector('#content');
             content.prepend(ifr);
         }
-
-        // function curtain() {
-        //     var imgList = document.querySelectorAll('imgame');
-        //     var liList = document.querySelectorAll('li');
-        //     var gridConRec = gridContainer.getBoundingClientRect();
-        //     for (let i = 0; i < liList.length; i++) {
-        //         var liRec = liList[i].getBoundingClientRect();
-        //         if (liRec.top > gridConRec.bottom || liRec.bottom < gridConRec.top) {
-                
-        //         }
-        //          else {
-        //             // imgList[i].style.display = '';
-        //             console.log('hello')
-        //         }
-        //     }
-        // };
         
         function showWebGL() {
             createGridImg();
